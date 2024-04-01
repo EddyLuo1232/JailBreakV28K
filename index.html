@@ -158,6 +158,108 @@
 </section>
 
 
+
+
+
+    <section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Conversion</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 10px; /* Tiny text approximation */
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 2.5pt;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    caption {
+        caption-side: bottom;
+        font-size: small;
+    }
+</style>
+</head>
+<body>
+<table>
+    <caption> <strong>Avg. Pos. Sim.</strong>: Average Positive Similarity: denotes semantic similarity of harmful queries. Higher is better. <strong>Num of Safety Policy</strong>: Number of Safety Policies. <strong>Query Syn. Div</strong>: Queries Syntactic Diversity, denotes the syntactic diversity of harmful queries. <strong>Synthesized</strong>: AI-generated data. <strong>Handcraft</strong>: Human-created data. <strong>Reconstructed</strong>: Data reorganized from other datasets.
+</caption>
+    <tr>
+        <th>Dataset</th>
+        <th>Size</th>
+        <th>Avg. Pos. Sim.</th>
+        <th>Num of Safety Policy</th>
+        <th>Query Syn. Div.</th>
+        <th>Synthesized</th>
+        <th>Handcraft</th>
+        <th>Reconstructed</th>
+    </tr>
+    <tr>
+        <td>Question Set</td>
+        <td>390</td>
+        <td>0.18</td>
+        <td>13</td>
+        <td>-</td>
+        <td>&check;</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>LLM Jailbreak Study</td>
+        <td>40</td>
+        <td>0.25</td>
+        <td>8</td>
+        <td>-</td>
+        <td>-</td>
+        <td>&check;</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>SafeBench</td>
+        <td>500</td>
+        <td>0.20</td>
+        <td>10</td>
+        <td>-</td>
+        <td>&check;</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <!-- Add other rows here -->
+    <tr>
+        <td><strong>RedTeam-2K(Ours)</strong></td>
+        <td><strong>2000</strong></td>
+        <td><strong>0.12</strong></td>
+        <td><strong>16</strong></td>
+        <td><strong>&check;</strong></td>
+        <td><strong>&check;</strong></td>
+        <td><strong>&check;</strong></td>
+        <td><strong>&check;</strong></td>
+    </tr>
+</table>
+</body>
+</html>
+              <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+    The comparison between RedTeam-2K and other existing Datasets. RedTeam-2K is a comprehensive dataset for assessing the resilience of jailbreak protocols and the security of LLMs, considering both the size and diversity of the data involved.
+               </h2>
+
+
+              </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -253,103 +355,6 @@ and typography image.
     </div>
   </div>
 </section>
-
-
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Table Conversion</title>
-<style>
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        font-size: 10px; /* Tiny text approximation */
-    }
-    th, td {
-        border: 1px solid black;
-        text-align: center;
-        padding: 2.5pt;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
-    caption {
-        caption-side: bottom;
-        font-size: small;
-    }
-</style>
-</head>
-<body>
-<table>
-    <caption> <strong>Avg. Pos. Sim.</strong>: Average Positive Similarity: denotes semantic similarity of harmful queries. Higher is better. <strong>Num of Safety Policy</strong>: Number of Safety Policies. <strong>Query Syn. Div</strong>: Queries Syntactic Diversity, denotes the syntactic diversity of harmful queries. <strong>Synthesized</strong>: AI-generated data. <strong>Handcraft</strong>: Human-created data. <strong>Reconstructed</strong>: Data reorganized from other datasets.
-</caption>
-    <tr>
-        <th>Dataset</th>
-        <th>Size</th>
-        <th>Avg. Pos. Sim.</th>
-        <th>Num of Safety Policy</th>
-        <th>Query Syn. Div.</th>
-        <th>Synthesized</th>
-        <th>Handcraft</th>
-        <th>Reconstructed</th>
-    </tr>
-    <tr>
-        <td>Question Set</td>
-        <td>390</td>
-        <td>0.18</td>
-        <td>13</td>
-        <td>-</td>
-        <td>&check;</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>LLM Jailbreak Study</td>
-        <td>40</td>
-        <td>0.25</td>
-        <td>8</td>
-        <td>-</td>
-        <td>-</td>
-        <td>&check;</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>SafeBench</td>
-        <td>500</td>
-        <td>0.20</td>
-        <td>10</td>
-        <td>-</td>
-        <td>&check;</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <!-- Add other rows here -->
-    <tr>
-        <td><strong>RedTeam-2K(Ours)</strong></td>
-        <td><strong>2000</strong></td>
-        <td><strong>0.12</strong></td>
-        <td><strong>16</strong></td>
-        <td><strong>&check;</strong></td>
-        <td><strong>&check;</strong></td>
-        <td><strong>&check;</strong></td>
-        <td><strong>&check;</strong></td>
-    </tr>
-</table>
-</body>
-</html>
-
-
-              </div>
-        </div>
-    </div>
-</section>
-
 
 
 
