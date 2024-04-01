@@ -219,6 +219,40 @@ and typography image.
 <!-- End image carousel -->
 
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results and Evaluation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Based on the proposed dataset JailBreakV-28K, we conduct a thorough evaluation of 10
+            open-source MLLMs using our dataset, demonstrating the transferability of LLMs jailbreak
+            attacks to MLLMs. The results of our comprehensive experiments indicate a significantly
+            high Attack Success Rate (ASR) for jailbreak attacks derived from LLMs, underscoring the
+            the critical need to mitigate alignment vulnerabilities related to both text and image inputs in
+            future research within this community. To summarize, based on our JailBreakV-28K dataset,
+            we discover some interesting insights that previous works have not revealed:
+          </p>
+          <ul>
+            <li>Textual jailbreak prompts capable of compromising LLMs are also likely to be
+            effective against MLLMs, regardless of the foundational model employed by the
+            MLLMs.</li>
+            <li>The effectiveness of these textual jailbreak prompts does not depend on the image
+            input. Whether the image input is blank, consists of noise, or is a random natural
+            image, the jailbreak still occurs.</li>
+            <li>Building on these observations, we argue that aligning MLLMs requires attention
+            not just to the multi-modal inputs (such as images) but also to textual inputs. This
+            presents significant challenges due to the dual risks these vulnerabilities pose.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 
