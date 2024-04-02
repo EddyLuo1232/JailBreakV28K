@@ -8,6 +8,12 @@ body {
     color: #000;
 }
 
+
+.mmmu {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
 .link-block a {
     margin-top: 5px;
     margin-bottom: 5px;
