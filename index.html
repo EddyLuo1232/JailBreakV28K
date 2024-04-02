@@ -234,7 +234,7 @@ different existing datasets to ensure cover various scenarios and keep high dive
               <td>-</td>
             </tr>
             <tr>
-              <td>MultiJail[English</td>
+              <td>MultiJail[English]</td>
               <td>315</td>
               <td>0.15</td>
               <td>74</td>
@@ -415,6 +415,87 @@ AI-generated data. Handcraft: Human-created data. Reconstructed: Data reorganize
         </div>
     </div>
 </section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLLMs Leaderboard</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  .leaderboard-table th, .leaderboard-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  .leaderboard-table thead {
+    background-color: #3949ab;
+    color: #ffffff;
+  }
+  .leaderboard-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .leaderboard-table tbody tr:hover {
+    background-color: #e3f2fd;
+  }
+  .subtitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  .hero {
+    padding: 20px 0;
+    background-color: #e8eaf6;
+  }
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="container">
+    <div class="subtitle">
+      MLLMs Leader Board on JailBreakV-28K
+    </div>
+    <table class="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Total ASR (%)</th>
+          <th>Transfer Attack ASR (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample Row -->
+        <tr>
+          <td>OmniLMM-12B</td>
+          <td>58.1</td>
+          <td>70.2</td>
+        </tr>
+        <!-- Add your rows here -->
+      </tbody>
+    </table>
+  </div>
+</section>
+</body>
+</html>
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
